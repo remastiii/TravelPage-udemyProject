@@ -1,0 +1,72 @@
+body{
+    background: linear-gradient(30deg,rgb(57,57,57),rgb(77,77,77));
+    color: rgb(68, 68, 68);
+}
+#logo a {
+color: rgb(183,230,235)
+}
+
+header{
+    position: static;
+}
+
+header a {
+    color: rgb(183,230,235)
+}
+header nav a:hover {
+    background-color: rgb(183,230,235);
+    color: rgb(59, 59, 59);
+
+}
+main ul {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    gap: 20px 20px;
+    margin: 48px auto;
+}
+li:nth-of-type(3){
+    grid-column: 1 / span 2 ; 
+}
+main li {
+    display: flex;
+    background-color: white;
+    border: 1px 2px 4px solid black;
+    border-radius: 6px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+main li img {
+    width: 300px;
+    height: 280px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 24px;
+   
+}
+.item-content h2 {
+    margin-top: 0px;
+}
+
+.item-content div a {
+    text-decoration: none;
+    padding: 6px;
+    color:rgb(22, 211, 226) ;
+    transition: 0.3s;
+    font-size: 16px; 
+}
+.actions {
+    text-align: right;
+}
+
+.item-content div a:hover {
+    background-color: rgba(235, 253, 255);
+    border-radius: 5px;
+    
+
+}
